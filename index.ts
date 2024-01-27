@@ -1,7 +1,23 @@
-let hasValue: boolean = false;
-let count: number = 34;
-let float: number = 3.5;
-let negative: number = -5.6;
-let single: string = 'hello';
-let double: string = 'world';
-let back: string = `hello`;
+let hasValue = false;
+let count = 34;
+let float = 3.5;
+let negative = -5.6;
+let single = 'hello';
+let double = 'world';
+let back = `hello`;
+let hello: string;
+hello = 'hello';
+
+const person: {
+  name: {
+    first: string;
+    last: string;
+  };
+  age: number;
+} = {
+  name: {
+    first: 'Jack',
+    last: 'Smith',
+  },
+  age: 21,
+};
