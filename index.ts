@@ -22,3 +22,5 @@ const person: {
   age: 21,
 };
 const fruits: string[] = ['Apple', 'Banana', 'Grape'];
+
+const book: [string, number, boolean] = ['business', 1500, false];

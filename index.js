@@ -15,3 +15,4 @@ var person = {
     age: 21,
 };
 var fruits = ['Apple', 'Banana', 'Grape'];
+var book = ['business', 1500, false];
