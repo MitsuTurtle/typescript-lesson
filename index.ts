@@ -41,3 +41,15 @@ console.log(CoffeeSize.SHORT);
 let unionType: number | string = 10;
 unionType = 'hello';
 let unionTypes: (number | string)[] = [21, 'hello'];
+
+const apple: 'apple' = 'apple';
+const banana: 2 = 2;
+
+let clothSize: 'small' | 'medium' | 'large' = 'small';
+const cloth: {
+  color: string;
+  size: 'small' | 'medium' | 'large';
+} = {
+  color: 'white',
+  size: 'medium',
+};
