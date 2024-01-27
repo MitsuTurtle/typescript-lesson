@@ -38,3 +38,12 @@ var cloth = {
     color: 'white',
     size: 'medium',
 };
+function add(num1, num2) {
+    return num1 + num2;
+}
+add(3, 2);
+function sayHello() {
+    console.log('Hello');
+}
+console.log(sayHello());
+var tmp;

@@ -54,3 +54,16 @@ const cloth: {
   color: 'white',
   size: 'medium',
 };
+
+function add(num1: number, num2: number): number {
+  return num1 + num2;
+}
+add(3, 2);
+
+function sayHello(): void {
+  console.log('Hello');
+}
+
+console.log(sayHello());
+
+let tmp: undefined;
