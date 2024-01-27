@@ -73,3 +73,11 @@ const anotherAdd: (n1: number, n2: number) => number = function (num1, num2) {
 };
 const doubleNumber = (number: number): number => number * 2;
 const doubleNumber2: (num: number) => number = (num) => num * 2;
+
+function doubleAndHandle(num: number, cb: (num: number) => number): void {
+  const doubleNum = cb(num * 2);
+  console.log(doubleNum);
+}
+doubleAndHandle(2, (doubleNum) => {
+  return doubleNum;
+});
