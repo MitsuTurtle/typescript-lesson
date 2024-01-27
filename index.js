@@ -47,3 +47,8 @@ function sayHello() {
 }
 console.log(sayHello());
 var tmp;
+var anotherAdd = function (num1, num2) {
+    return num1 + num2;
+};
+var doubleNumber = function (number) { return number * 2; };
+var doubleNumber2 = function (num) { return num * 2; };
