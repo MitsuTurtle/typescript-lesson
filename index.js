@@ -59,3 +59,14 @@ function doubleAndHandle(num, cb) {
 doubleAndHandle(2, function (doubleNum) {
     return doubleNum;
 });
+var unknownInput;
+var anyInput;
+var text;
+unknownInput = 'hello';
+unknownInput = 21;
+unknownInput = true;
+// text = unknownInput;
+// text = anyInput;
+if (typeof unknownInput === 'string') {
+    unknownInput;
+}
