@@ -14,3 +14,4 @@ var person = {
     },
     age: 21,
 };
+var fruits = ['Apple', 'Banana', 'Grape'];
