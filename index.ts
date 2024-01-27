@@ -37,3 +37,7 @@ const coffee = {
   size: CoffeeSize.TALL,
 };
 console.log(CoffeeSize.SHORT);
+
+let unionType: number | string = 10;
+unionType = 'hello';
+let unionTypes: (number | string)[] = [21, 'hello'];

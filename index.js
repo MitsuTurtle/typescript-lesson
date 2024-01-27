@@ -28,3 +28,6 @@ var coffee = {
     size: CoffeeSize.TALL,
 };
 console.log(CoffeeSize.SHORT);
+var unionType = 10;
+unionType = 'hello';
+var unionTypes = [21, 'hello'];
