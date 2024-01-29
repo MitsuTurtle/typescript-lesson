@@ -70,3 +70,7 @@ unknownInput = true;
 if (typeof unknownInput === 'string') {
     unknownInput;
 }
+function error(message) {
+    throw new Error(message);
+}
+console.log(error('This is an error'));
