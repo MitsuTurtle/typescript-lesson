@@ -4,10 +4,10 @@ interface Human {
   greeting(message: string): void;
 }
 
-const human: Human = {
-  name: 'Quill',
-  age: 38,
-  greeting(message: string): void {
-    console.log(message);
-  },
-};
+// このクラスが生成するインスタンスがもっている型をimplementsで定義する
+class Developer implements Human {
+  constructor(public name: string, public age: number, public experience: number) {}
+  greeting(message: string) {
+    console.log('Hello');
+  }
+}
