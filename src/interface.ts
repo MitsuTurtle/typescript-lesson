@@ -1,5 +1,5 @@
 interface Human {
-  name: string;
+  readonly name: string;
   age: number;
   greeting(message: string): void;
 }
@@ -21,3 +21,6 @@ const tempDeveloper = {
 };
 // const user: Human = new Developer('Quill', 38, 3);
 const user: Human = tempDeveloper;
+let developer = new Developer('Quill', 38, 3);
+// interfaceのreadonlyはimplementsには効果を及ぼさない
+developer.name = 'Tom';
