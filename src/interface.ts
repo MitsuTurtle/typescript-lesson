@@ -9,7 +9,12 @@ addFunc = (n1: number, n2: number) => {
 };
 interface Nameable {
   name: string;
+  nickName?: string;
 }
+const nameable: Nameable = {
+  name: 'Quill',
+  nickName: 'Quilla',
+};
 interface Human extends Nameable {
   age: number;
   greeting(message: string): void;
@@ -19,7 +24,7 @@ interface Human extends Nameable {
 class Developer implements Human {
   constructor(public name: string, public age: number, public experience: number) {}
   greeting(message: string) {
-    console.log('Hello');
+    console.log(message);
   }
 }
 const tempDeveloper = {
