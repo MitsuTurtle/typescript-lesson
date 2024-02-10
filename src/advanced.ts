@@ -71,3 +71,14 @@ havePet(new Bird());
 
 // non-null assertion operator
 const input = document.getElementById('input')!;
+
+interface Designer {
+  name: string;
+  [index: string]: string;
+}
+const designer: Designer = {
+  name: 'Quill',
+  role: 'afa',
+  fafa: 'ff',
+};
+console.log(designer.fafa);
