@@ -104,3 +104,10 @@ console.log(downloadedData.user?.name?.first);
 
 const userData = downloadedData.user ?? 'no-user';
 type id = DownloadedData['id' | 'user'];
+enum Color {
+  RED,
+  BLUE,
+}
+let target = Color.RED;
+let source = 0;
+target = source;
