@@ -146,3 +146,6 @@ enum Color {
 let target = Color.RED;
 let source = 0;
 target = source;
+
+function advancedFn(...args: [number, string, boolean, ...number[]]) {}
+advancedFn(0, 'hi', true, 3, 3, 3);
