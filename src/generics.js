@@ -39,3 +39,5 @@ fetchData.then(function (data) {
 var vegetables = ['Tomato', 'Broccoli', 'Asparagus'];
 var tmp2;
 var tmp3;
+var tmp4;
+var tmp5;
