@@ -28,3 +28,12 @@ var TmpDatabase = {
     id: 3,
     data: [32],
 };
+var fetchData = new Promise(function (resolve) {
+    setTimeout(function () {
+        resolve('hello');
+    }, 3000);
+});
+fetchData.then(function (data) {
+    data.toUpperCase();
+});
+var vegetables = ['Tomato', 'Broccoli', 'Asparagus'];
