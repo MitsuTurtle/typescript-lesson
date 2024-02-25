@@ -38,3 +38,4 @@ fetchData.then(function (data) {
 });
 var vegetables = ['Tomato', 'Broccoli', 'Asparagus'];
 var tmp2;
+var tmp3;
