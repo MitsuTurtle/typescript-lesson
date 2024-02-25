@@ -37,3 +37,4 @@ fetchData.then(function (data) {
     data.toUpperCase();
 });
 var vegetables = ['Tomato', 'Broccoli', 'Asparagus'];
+var tmp2;
