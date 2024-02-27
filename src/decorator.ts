@@ -5,6 +5,7 @@ function Logging(message: string) {
     console.log(constructor);
   };
 }
+console.dir(Logging);
 function Component(template: string, selector: string) {
   console.log('Component Factory');
   return function <T extends { new (...args: any[]): { name: string } }>(constructor: T) {
@@ -23,12 +24,21 @@ function Component(template: string, selector: string) {
   };
 }
 
+function PropertyLogging(target: any, propertyKey: string) {
+  console.log('propertyLogging');
+  console.log(target);
+  console.log(propertyKey);
+}
 @Logging('Logging User')
 @Component('<h1>{{ name }}</h1>', '#app')
 class User {
+  @PropertyLogging
   name = 'Quill';
   constructor(public age: number) {
     console.log('User was created!');
+  }
+  greeting() {
+    console.log('Hello!');
   }
 }
 const user1 = new User(32);
