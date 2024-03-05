@@ -108,5 +108,5 @@
   },
   // "include": ["./src/food-app"]
   // "exclude": ["**/compiler.ts", "*.spec.ts", "node_modules"],
-  "files": ["./src/library.ts"]
+  "files": ["./src/library.ts", "./src/lodash.d.ts"]
 }
