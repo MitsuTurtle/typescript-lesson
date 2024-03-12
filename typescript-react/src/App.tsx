@@ -1,7 +1,9 @@
+import Hello from './components/Hello';
+
 function App() {
   return (
     <div>
-      <h1>Hello</h1>
+      <Hello message="I am Peter"></Hello>
     </div>
   );
 }
